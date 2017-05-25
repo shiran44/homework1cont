@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VOD for business companies</title>
+        <link rel="stylesheet" type="text/css" href="includes/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1> Welcome my VOD business customer profile</h1>
+            <h6>Shiran Twik , 2017 , node.js </h6>
+
+            <h3>Get all companies (GET Without parameters):</h3>
+            <p><a href="https://targil1cont.herokuapp.com/getAllData"> /getAllData</a></p><br>
+
+            <h3>Get company by profile id (POST 'profile_id' param required):</h3>
+            <p><a href="https://targil1cont.herokuapp.com/getCompany">/getCompany</a></p><br>
+
+            <h3>Filter companies by minimum quantity of devices and city (Get 'city' and 'devices' params required):</h3>
+            <p><a href="https://targil1cont.herokuapp.com/getCompanyByCity&Devices/:city/:devices"> /getCompanyByCityDevices/:city/:devices</a></p><br><br>
+
+            <div id="json">
+                <h2>Example of json object:</h2>
+                <p>{<br>
+                    <b>"name"</b>: "CYBER",<br>
+                    <b>"Profile"</b>: 2356,<br>
+                    <b>"classification"</b>: "AA+" <br>
+                    <b>"Branches"</b>: [{<br>
+                        <b>"city"</b>: "PT",<br>
+                        <b>"id"</b>: 43<br>
+                        <b>"address"</b>: "Bilu 67"<br>
+                        },{<br>
+                        <b>"city"</b>: "RG",<br>
+                        <b>"id"</b>: 87<br>
+                        <b>"address"</b>: "Gordon 102"<br>
+                        }]<br>
+                    <b>"Quantity_of_devices"</b>: 34,<br>
+                    <b>"Monthly_amount"</b>: 2199<br>
+
+                }
+                </p>
+            </div>
+        </div> 
+    </body>
+</html>
